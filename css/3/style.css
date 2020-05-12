@@ -9,8 +9,8 @@ html{
 }
 
 /*layout*/
-.container {
-  max-width: 500px;
+body {
+  max-width: 1920px;
   min-width: 270px;
   height: 100vh;
   margin: auto;
@@ -20,6 +20,10 @@ html{
 
 .back{
   padding: 3vh;
+}
+
+.back img{
+  width: 4vh;
 }
 
 .main{
@@ -35,8 +39,10 @@ html{
 }
 
 .text{
+  width: 70%;
+  margin: 0 auto;
   height: 35vh;
-  padding-top:2vh;
+  padding-top:14vh;
 }
 
 a{
@@ -44,7 +50,16 @@ a{
   color: #fff;
 }
 
+.round img{
+  width: 7vh;
+}
+
+.round p{
+  margin-top: 1.5vh;
+}
+
 .round1,.round2{
+  width: 50%;
   text-align: center;
 }
 
