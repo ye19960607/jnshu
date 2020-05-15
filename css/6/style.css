@@ -1,0 +1,292 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  position: relative;
+  min-width: 320px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 5.5rem;
+  background-color: #5FC0CD;
+}
+
+.menu{
+  position: absolute;
+  width: 18rem;
+  height: 4.375rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: calc(50% - 9rem);
+}
+
+.menu button{
+  width: 8.8rem;
+  height: 4.375rem;
+  border:none;
+  border-radius: 0.4rem;
+  font-size: 2.125rem;
+}
+
+.menu .btn1{
+  background-color: #55A8B3;
+  color: #ffffff;
+}
+
+.menu .btn2{
+  background-color: #FFFFFF;
+  margin-left: -4px;
+  color: #55A8B3;
+}
+
+.header-font{
+  width: 2.625rem;
+  height: 2.625rem;
+  position: absolute;
+  top: 50%;
+  right: 1.8rem;
+  transform: translateY(-50%);
+  background-image: url(images/sprite.png);
+  background-position: 0 0;
+  background-size: 11rem;
+  z-index: 2;
+}
+
+.nav{
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  top: 5.5rem;
+  border-bottom: 1px solid #E1E5E7;
+}
+
+.nav-container{
+  width: 99%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.navmenu{
+  width: 33%;
+  height: 5rem;
+  border-right: 1px solid #E1E5E7;
+  position: relative;
+  text-align: center;
+}
+
+.navmenu:nth-child(3){
+  border-right: none !important;
+}
+
+.navmenu a{
+  text-decoration: none;
+  color: #999999;
+  font-size: 1.75rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -4rem;
+}
+
+.nav-icon{
+  width: 1.8rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 50%;
+  right: 0.3rem;
+  transform: translateY(-50%);
+  background-image: url(images/sprite.png);
+  background-position: 0 133px;
+}
+
+.subnav{
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  border: 2rem;
+  background-color: #5FC0CD;
+  z-index: 2;
+  overflow: auto;
+  display: none;
+}
+
+.navmenu:hover .subnav{
+  display: block;
+}
+
+.subnav-menu{
+  height: 4rem;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: #ffffff;
+}
+
+.subnav-menu:hover{
+  background-color: #55A8B3;
+}
+
+.main{
+  width: 100%;
+  position: absolute;
+  top: 10.5rem;
+  margin-bottom: 6.25rem;
+}
+
+.main-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-list{
+  height: 11.25rem;
+  border-bottom: 1px solid #E1E5E7;
+}
+
+.main-list .content{
+  height: 33%;
+  position: relative;
+}
+
+.main-list-container{
+  height: 80%;
+  margin: auto 0;
+}
+
+.content span{
+  position: absolute;
+  top: 50%;
+  left:5.2rem;
+  transform: translateY(-50%);
+  color: #999999;
+  font-size: 1.8rem;
+}
+
+.content .date{
+  width: 2rem;
+  height: 3rem;
+  margin-left: 2rem;
+  background-image: url(images/sprite.png);
+  background-position: 0 79px;
+  background-size: 16rem;
+}
+
+.content .address{
+  width: 2rem;
+  height: 3rem;
+  margin-left: 2rem;
+  background-image: url(images/sprite.png);
+  background-position: 4px 46px;
+  background-size: 16rem;
+}
+
+.content2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.content2 .year{
+  color: #333333;
+  font-size: 1.8rem;
+  line-height: 165%;
+  margin-left: 5rem;
+  width: 35%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.content2 .price{
+  position: absolute;
+  right: 2rem;
+}
+
+
+.price p{
+  color: #E63B0E;
+  font-size: 2rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.price-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid #5FC0CD;
+  display: inline-block;
+  transform: rotate(45deg);
+  border-left: none;
+  border-bottom: none;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 6.25rem;
+  background-color: #F8FAFB;  
+}
+
+.footer-container{
+  width: 80%;
+  height: 6.25rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .btn{
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+footer .btn2{
+  border-radius: 50%;
+  border: none;
+  background-color: #55A8B3;
+  background-image: url(images/sprite.png);
+  background-position: 105px 102px;
+  background-size: 13rem;
+}
+
+footer .home{
+  height: 3.7rem;
+  width: 6.25rem;
+  background-image: url(images/sprite.png);
+  background-position: 102px 133px;
+  background-size: 13rem;
+  margin-top: 0.2rem;
+}
+
+footer .btn p{
+  text-align: center;
+  color: #5FC0CD;
+  font-size: 1.25rem;
+}
+
+footer .me{
+  height: 3.7rem;
+  width: 6.25rem;
+  background-image: url(images/sprite.png);
+  background-position: 102px 43px;
+  background-size: 13rem;
+  margin-top: 0.2rem;
+}
+
+.btn3 p{
+  color: #999999 !important;
+}
