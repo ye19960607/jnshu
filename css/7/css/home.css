@@ -1,5 +1,6 @@
 html{
   font-size: 62.5%;
+  background-color: #eff0f1;
 }
 body{
   position: relative;
@@ -32,7 +33,7 @@ header{
   overflow: hidden;
 }
 
-.container{
+.containern{
   width: 88%;
   height: 7.25rem;
   margin: 1.68rem auto;
