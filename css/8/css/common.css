@@ -1,0 +1,311 @@
+/*reset*/
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+ol,
+ul,
+li,
+footer,
+header,
+menu,
+nav,
+audio,
+video,
+button {
+  margin:0;
+  padding:0;
+}
+
+html{
+  font-size: 625%;
+}
+
+body{
+  font: .16rem/1.5 "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  background-color: #fafafa;
+  min-width: 320px;
+}
+
+button{
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus{
+  text-decoration: none;
+  outline: none;
+}
+
+.wechat,
+.qq,
+.weibo{
+  background-image: url(../images/spirte.png);
+  background-repeat: no-repeat;
+}
+
+.wechat{
+  height: 26px;
+  width: 27px;
+  background-position: -5px -10px;
+}
+
+.qq{
+  height: 26px;
+  width: 27px;
+  background-position: -7px -36px;
+}
+
+.weibo{
+  height: 26px;
+  width: 27px;
+  background-position: -7px -73px;
+}
+
+header{
+  height: .4rem;
+  line-height: .4rem;
+  background-color: #fff;
+  color: #29B078;
+  overflow: hidden;
+}
+
+header a{
+  color: #ccc;
+  text-decoration: none;
+}
+
+header .container{
+  position: relative;
+}
+
+header .share{
+  display: flex;
+  align-items: center;
+  height: .4rem;
+}
+
+header .share button{
+  margin-left: .1rem;
+}
+
+.navbar{
+  min-height: .8rem;
+  background-color: #29B078;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar-brand img{
+  max-height: 100%;
+}
+
+.navbar-brand{
+  display: inline-block;
+  height: 100%;
+}
+
+.navbar-nav li a:hover{
+  border-bottom: 4px solid #fff;
+}
+
+.navbar-nav .active a{
+  border-bottom: 4px solid #fff;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+    background-color: #29b078;
+    outline: none;
+}
+
+.navbar-header,
+.collapse,
+.navbar-nav,
+.navbar-nav li,
+.navbar-nav li.active,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>.active>a{
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover{
+    color: #fff;
+    outline: none;
+}
+
+footer{
+  padding-top: 40px;
+  background-color: #29B078;
+  color: #fff;
+}
+
+footer p{
+  color: #fff;
+}
+
+footer li{
+  height: .4rem;
+}
+
+.footer-info2 li span:first-child{
+  margin-right: 10%;
+}
+
+.public-code{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.qrcode{
+  width: 92px;
+  height: 92px;
+  background-image: url(../images/qrcode.png);
+  background-repeat: no-repeat;
+  margin: 8px;
+}
+
+.copyright{
+  border-top: 1px solid #fff;
+  text-align: center;
+  line-height: 2;
+}
+
+footer a:hover{
+  border-bottom: 1px solid #fff;
+  padding-bottom: .2em;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:active{
+  color: #000;
+}
+
+
+@media (min-width: 768px){
+  .navbar-header,
+  .collapse,
+  .navbar-nav,
+  .navbar-nav li,
+  .navbar-nav li.active,
+  .navbar-default .navbar-nav>li>a,
+  .navbar-default .navbar-nav>.active>a{
+      height:.8rem;
+      line-height: .5rem;
+  }
+
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:focus,
+  .navbar-default .navbar-nav>.active>a:hover,
+  .navbar-default .navbar-nav>li>a:hover{
+      border-bottom: 4px solid #fff;
+      color: #fff;
+      outline: none;
+  }
+
+  .navbar-default .navbar-nav>li>a:focus{
+      color: #fff;
+      outline: none;
+  }
+
+}
+
+
+@media (max-width: 768px){
+  .navbar{
+      min-height:.4rem;
+      text-align: center;
+  }
+
+  .navbar-toggle{
+      border: 0;
+  }
+
+  .navbar-default .navbar-toggle:hover{
+      background-color: #fff;
+  }
+
+  .navbar-default .navbar-toggle:focus{
+      background-color: transparent;
+      outline: none;
+  }
+
+.navbar-default .navbar-nav li a:focus {
+      color: #fff;
+      outline: none;
+  }
+  
+  .navbar-default .navbar-nav li a:hover,
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:focus,
+  .navbar-default .navbar-nav>.active>a:hover{
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      outline: none;
+  }
+
+  .navbar-brand{
+      display: inline-block;
+      padding-top: 5px;
+      padding-bottom:5px;
+      height: 48px;
+  }
+  .navbar-brand img{
+      height:100%;
+  }
+
+  footer li{
+      height: .3rem;
+  }
+
+  .empty{
+      display: none;
+  }
+
+  .public-code{
+      align-items: flex-start;
+  }
+
+.qrcode {
+  margin: 10px 0;
+}
+}
+
+.lte-9 .container{
+  position: relative;
+}
+
+.lte-9 .share{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  margin: auto;
+  height: 25px;
+}
