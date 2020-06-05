@@ -269,8 +269,8 @@ main .row{
   width:20%;
   height:120px;
   float: left;
-  border: #ccc solid 1px;
-  border-radius: 3px;
+  /* border: #ccc solid 1px; */
+  /* border-radius: 3px; */
   box-shadow: #ccc 2px 2px 2px;
   overflow: hidden;
   background-color: #fff;
@@ -319,6 +319,10 @@ main .row{
   .col-md-1-10{
     float: left;
     width: 10%;
+  }
+
+  .arrow-show{
+    display: none;
   }
 }
 
