@@ -269,6 +269,11 @@ footer a:active{
       outline: none;
   }
 
+  .navbar-collapse{
+    border-top: 0;
+    box-shadow: none;
+  }
+
   .navbar-brand{
       display: inline-block;
       padding-top: 5px;

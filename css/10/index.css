@@ -1,0 +1,232 @@
+/*reset*/
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+ol,
+ul,
+li,
+footer,
+header,
+menu,
+nav,
+audio,
+video,
+button,
+label,
+select,
+input,
+option {
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 625%;
+}
+
+body{
+    font:.14rem/1.5 "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+
+button{
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    min-width: 300px;
+}
+
+/*layout*/
+header{
+  height: .4rem;
+  background-color: #1d7ad9;
+  line-height: .4rem;
+  color: #fff;
+  overflow: hidden;
+}
+
+.enter-bar{
+  line-height: .4rem;
+}
+
+.enter-bar a{
+  float: left;
+  padding: 0 1em;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  color: #fff;
+}
+
+.enter-bar a:hover{
+  padding: 0 1.5em;
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+
+
+
+
+footer a{
+  color: #999;
+  font-size: 14px;
+}
+
+.footer-info{
+  font-size: 16px;
+}
+
+footer .active{
+  color: #1D7AD9;
+}
+
+footer a:hover{
+  color: #1D7AD9;
+}
+
+footer>.container>.row{
+  padding: 5em 0;
+  color: #999;
+}
+
+.footer-c div{
+  height: 3em;
+}
+
+.footer-r{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-r>div{
+  line-height: 2em;
+  margin-right: 1em;
+}
+
+.footer-r p{
+  height: 2em;
+}
+
+.qrcode{
+  width: .92rem;
+  height: .92rem;
+  background-image: url(images/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -62px 0px;
+}
+
+.footer-d a{
+  padding: 0 2em;
+  color: #fff;
+}
+
+.footer-d{
+  line-height: 2em;
+  color: #fff;
+  text-align: center;
+  background-color: #1D7AD9;
+}
+
+.footer-d a:hover{
+  color: #000;
+}
+
+@media (min-width: 992px) {
+  main .row{
+      display: flex;
+      align-items: center;
+  }
+
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .chart-box{
+      width: 100%;
+  }
+
+  .footer-c div{
+    height: 2em;
+}
+.footer-r{
+    display: block;
+}
+
+}
+
+@media (max-width: 768px) {
+  .chart-box{
+      width:100%;
+      height: auto;
+  }
+
+  .bg-line{
+      display: none;
+  }
+  .step{
+      float: none;
+      width: 100%;
+  }
+  .head-title{
+      margin-top: 0;
+  }
+  .navbar-default ul{
+      width: 95%;
+      margin: auto;
+  }
+
+  nav ul li{
+      padding-left: 0;
+  }
+
+  .input-box .row{
+      padding-left:0;
+  }
+
+  .input-box>.row>[class^="col-"]{
+      display: flex;
+      justify-content: center;
+  }
+
+  .row .row{
+      margin: 0 .5em;
+  }
+  select{
+      margin: 2em 0;
+  }
+
+  .footer-c div{
+      height: 2em;
+  }
+  .footer-r{
+      display: block;
+  }
+  
+}

@@ -27,7 +27,6 @@ main a span{
 
 .box{
   background-color: #FFFFFF;
-  border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: 2px 2px 2px #ccc;
 }
